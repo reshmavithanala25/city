@@ -1,0 +1,135 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0a3d62;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+/* LOGO */
+.logo img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+/* CITY NAME */
+.name h1 {
+    color: white;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* NAVBAR */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 14px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background: white;
+    color: #0a3d62;
+    border-radius: 20px;
+}
+
+/* ================= TEMPLE SECTION ================= */
+
+.temples {
+    padding: 60px 40px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.temples h2 {
+    font-size: 32px;
+    color: #0a3d62;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* TEMPLE CARDS CONTAINER */
+.temple-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* INDIVIDUAL CARD */
+.temple-card {
+    background: #f4f6f8;
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temple-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* IMAGES */
+.temple-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* TITLES */
+.temple-card h3 {
+    margin: 15px 0 10px;
+    color: #0a3d62;
+    font-size: 22px;
+}
+
+/* TEXT */
+.temple-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .temple-card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #0a3d62;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.name h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: white;
+    color: #0a3d62;
+    border-radius: 20px;
+}
+
+/* Food Section */
+.food-section {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.food-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #7a1c1c;
+    letter-spacing: 1px;
+}
+
+/* Food Container */
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Food Card */
+.food-card {
+    background-color: #ffffff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.food-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Food Images */
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Food Title */
+.food-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Food Description */
+.food-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    background-color: #7a1c1c;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .name h1 {
+        font-size: 28px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .food-section h2 {
+        font-size: 28px;
+    }
+
+    .food-card {
+        width: 90%;
+    }
+}

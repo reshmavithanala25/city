@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #0a3d62;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.name h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: white;
+    color: #0a3d62;
+    border-radius: 20px;
+}
+
+/* Places Section */
+.places {
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.places h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #5c1e1e;
+}
+
+/* Place List */
+.place-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+/* Place Card */
+.place-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Place Images */
+.place-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Place Title */
+.place-card h3 {
+    font-size: 20px;
+    color: #8b2e2e;
+    margin-bottom: 10px;
+}
+
+/* Place Description */
+.place-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .places {
+        padding: 30px 20px;
+    }
+}

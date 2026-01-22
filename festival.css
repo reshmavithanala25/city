@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #0a3d62;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.name h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: white;
+    color: #0a3d62;
+    border-radius: 20px;
+}
+
+/* Festivals Section */
+.festivals {
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.festivals h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+/* Festival Grid */
+.festival-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Festival Card */
+.festival-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.festival-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Festival Images */
+.festival-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Festival Title */
+.festival-card h3 {
+    margin: 15px 0 10px;
+    font-size: 22px;
+    color: #e67e22;
+}
+
+/* Festival Description */
+.festival-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name h1 {
+        font-size: 26px;
+    }
+}
